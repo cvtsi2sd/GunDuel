@@ -30,9 +30,9 @@ public:
 		// Size of one memory page; we use it to walk the stack carefully
 		const size_t pageSize = 4096;
 		// Maximum allowed difference between the vtables
-		const size_t maxVTblDelta = 65536;
+		const ptrdiff_t maxVTblDelta = 65536;
 		// Maximum allowed difference between this and the other player
-		size_t maxObjsDelta = 131072;
+		ptrdiff_t maxObjsDelta = 131072;
 
 		// Our adversary
 		Player *c = nullptr;
